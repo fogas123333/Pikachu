@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #f5cf06;
+    --secundary-color: #8e4106;
+}
+body{
+    height: 100vh;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Righteous', cursive;
+}
+.container{
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: 90vw;
+    margin: auto;
+}
+header{
+    margin-top: 70px;
+}
+header a{
+    grid-column: 1/-1;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-decoration: none;
+    color: var(--secundary-color);
+    font-size: 2rem;
+}
+main{
+    flex-grow: 2rem;
+}
+.title{
+    position: relative;
+    grid-column: 1/-1;
+    place-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title-text{
+    font-size: 20vw;
+    color: #fff;
+}
+.title-transparent{
+    position: absolute;
+    top: -50%;
+    font-size: 27vw;
+    color: #fff5;
+    z-index: -1;
+}
+.action{
+    grid-column: 7/-1;
+    place-self: start end;
+    height: 100px;
+    width: 411px;
+    background-color: var(--secundary-color);
+    color: #fff;
+    font-size: 3rem;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
